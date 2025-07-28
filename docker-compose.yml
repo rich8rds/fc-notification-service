@@ -1,6 +1,6 @@
 services:
   notifications-service:
-    image: ${ECR_REPOSITORY}/fc-notifications-service:latest
+    build: ./
     container_name: notifications-service
     ports:
       - "4089:4089"
